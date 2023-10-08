@@ -1,0 +1,36 @@
+#Prefix du plugin utilisé dans tout les messages. Laisser vide si vous ne souhaitez pas en utiliser.
+#Prefix of the plugin used in all messages. Leave blank if you do not wish to use any.
+prefix: "&7[&eMaintenancePlugin&7]"
+#NE PAS TOUCHER ! CETTE VALEUR SE MODIFIE VIA DES COMMANDES ET PEUT FAIRE BUGGER LE PLUGIN SI VOUS Y TOUCHEZ DE VOUS MÊME.
+#DO NOT TOUCH ! THIS VALUE CAN BE CHANGED VIA COMMANDS AND CAN CAUSE THE PLUGIN TO BUGG IF YOU TOUCH IT YOURSELF.
+maintenance-activated: false
+#Ne pas toucher !
+#Do not touch
+version: 1.0.0
+#Temps d'attente après l'utilisation du /maintenance avant que tout les joueurs n'ayant pas la permission soit co.
+#Waiting time after using /maintenance before all players without permission either co.
+time-before-kicking: 10
+
+messages:
+#Message affiché aux joueurs ne pouvant pas se connecter pendant la maintenance.
+#Message displayed to players unable to connect during maintenance.
+  kick-message: " &cLa maintenance est activé sur ce serveur. Merci de contacter le staff de votre serveur pour plus d'informations."
+#Message affiché aux joueurs kick au moment de l'activation du mode maintenance.
+#Message displayed to kick players when activating maintenance mode.
+  kick-message-after-ingamekick: " &cLe mode maintenance est désormais activé sur le serveur."
+#Message affiché lors de l'activation du mode maintenance dans le tchat. Placeholder : {seconds} > Affiche le temps restant. Ce message est envoyé toutes les 5 secondes dans le tchat, puis toutes les secondes les 5 dernières secondes.
+#Message displayed when activating maintenance mode in chat. Placeholder: {seconds} > Displays the remaining time. This message is sent every 5 seconds in the chat, then every second for the last 5 seconds.
+  message-before-kicking: " &cLe serveur passe en mode maintenance dans {seconds} secondes. Tout les joueurs classiques seront exclus du serveur."
+#Message envoyé dans le tchat après le kick des joueurs n'ayant pas la permission maintenance.bypass
+#Message sent in the chat after the kick to players who do not have maintenance.bypass permission
+  message-after-kicking: " &2Le mode maintenance est désormais actif. Tout les utilisateurs ne possédant pas la permission &amaintenance.bypass &2ne pourront plus se connecter."
+#Message envoyé aux personnes pouvant se connecter durant une maintenance.
+#Message sent to people who can connect during maintenance.
+  connection-authorized: " &2La maintenance est activé, mais vous avez pu vous connecter car vous aviez la permission de bypass !"
+#Message de status envoyé lors de l'utilisation du /maintenance-status quand celui si est activé.
+#Status message sent when using /maintenance-status when it is enabled.
+  activated-message-status: " &2La maintenance est actuellement activé."
+#Message de status envoyé lors de l'utilisation du /maintenance-status quand celui si est desactivé.
+#Status message sent when using /maintenance-status when it is disabled.
+  desactivated-message-status: " &cLa maintenance est actuellement desactivé."
+
